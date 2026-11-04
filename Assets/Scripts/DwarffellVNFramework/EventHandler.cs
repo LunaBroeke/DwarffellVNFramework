@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Runtime.Serialization;
 
 namespace Dwarffell.VisualNovelFramework
 {
@@ -11,6 +12,7 @@ namespace Dwarffell.VisualNovelFramework
 		public static event Action<Segment> OnSegmentLoad;
 		public static event Action<Segment> OnChoicesLoad;
 		public static event Action<Exception> OnException;
+		public static event Action OnEnding;
 		public static StoryFlags storyFlags = new StoryFlags();
 
 		public static bool choiceMode = false;
@@ -42,8 +44,10 @@ namespace Dwarffell.VisualNovelFramework
 			}
 			catch (Exception e) 
 			{
-				OnSegmentLoad.Invoke(new Segment($"!!!!{TextPlayer.text.errorMessages.getError}!!!! \n++\n {e.Message}\n++"));
-				OnException.Invoke(e);
+				OnEnding?.Invoke();
+				throw new SegmentOutofRangeException("Ended!");
+				OnException?.Invoke(e);
+				OnSegmentLoad?.Invoke(new Segment($"!!!!{TextPlayer.text.errorMessages.getError}!!!! \n++\n {e.Message}\n++"));
 				return null;
 			}
 		}
@@ -169,5 +173,28 @@ namespace Dwarffell.VisualNovelFramework
 		public string choiceText;
 		public Action action;
 		public Segment nextSegment;
+	}
+
+	public class SegmentOutofRangeException : Exception
+	{
+		public SegmentOutofRangeException()
+		{
+
+		}
+
+		public SegmentOutofRangeException(string message) : base(message)
+		{
+
+		}
+
+		public SegmentOutofRangeException(string message, Exception innerException) : base(message, innerException)
+		{
+
+		}
+
+		protected SegmentOutofRangeException(SerializationInfo info, StreamingContext context) : base(info, context)
+		{
+
+		}
 	}
 }

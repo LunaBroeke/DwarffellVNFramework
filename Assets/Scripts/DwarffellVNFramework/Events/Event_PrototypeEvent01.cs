@@ -10,7 +10,7 @@ namespace Dwarffell.VisualNovelFramework
 		public Language.Dialogue dialogue = TextPlayer.text.dialogue;
 		public Language.Name name = TextPlayer.text.name;
 		public List<Segment> segments { get; set; }
-		public Action<IEvent> OnEventEnd { get; set; }
+		public Action OnEventEnd { get; set; }
 
 		public Event_PrototypeEvent01() 
 		{
@@ -34,8 +34,7 @@ namespace Dwarffell.VisualNovelFramework
 		}
 		public void EndEvent()
 		{
-			OnEventEnd.Invoke(new Event_PrototypeEvent02());
-			EventHandler.WipeSubs(OnEventEnd);
+			OnEventEnd?.Invoke();
 		}
 	}
 }

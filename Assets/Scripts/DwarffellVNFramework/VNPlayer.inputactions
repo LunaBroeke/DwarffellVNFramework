@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "name": "VNPlayer",
+    "maps": [
+        {
+            "name": "Controls",
+            "id": "ceff5635-1816-46ad-8c91-b33e2d01d6af",
+            "actions": [
+                {
+                    "name": "Advance",
+                    "type": "Button",
+                    "id": "d83e919a-0689-4913-af77-21d769b3cee5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e336d195-48f5-4669-9c99-2673851ed792",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Advance",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9132be83-89d9-401f-be13-e878bbf7a777",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Advance",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -10,7 +10,7 @@ namespace Dwarffell.VisualNovelFramework
 	public interface IEvent
 	{
 		public List<Segment> segments { get; set; }
-		public Action<IEvent> OnEventEnd { get; set; }
+		public Action OnEventEnd { get; set; }
 
 		public void EndEvent();
 	}
