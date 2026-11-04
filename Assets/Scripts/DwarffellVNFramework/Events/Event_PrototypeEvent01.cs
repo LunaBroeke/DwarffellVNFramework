@@ -4,6 +4,7 @@ using Dwarffell.TextEngine;
 
 namespace Dwarffell.VisualNovelFramework
 {
+	[Serializable]
 	public class Event_PrototypeEvent01 : IEvent
 	{
 		public Language.Dialogue dialogue = TextPlayer.text.dialogue;
