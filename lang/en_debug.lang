@@ -1,0 +1,65 @@
+{
+  "languageName": "English",
+  "languageCode": "en_debug",
+  "system": {
+    "menu": "menu",
+    "pause": "pause",
+    "play": "play",
+    "save": "save",
+    "load": "load",
+    "credits": {
+      "dwarffell": "Luna Dwarffell",
+      "program": "Programming",
+      "art": "Artwork"
+    }
+  },
+  "name": {
+    "dwarffell": "Luna Dwarffell",
+    "celestia": "Celestia",
+    "lumine": "Lumine",
+    "serena": "Serena",
+    "ange": "Ange",
+    "maple": "Maple",
+    "bnuy": "bnuy",
+    "bnuyNames": [
+      "Bnuy"
+    ]
+  },
+  "dialogue": {
+    "event_PrototypeEvent01_line01": "The Forest of Magic - Planet Lumia - Day",
+    "event_PrototypeEvent01_line02": "So what is the plan again?",
+    "event_PrototypeEvent01_line03": "We lock in!",
+    "event_PrototypeEvent01_line04": "What does that even mean?",
+    "event_PrototypeEvent01_line05": "It means what it means.",
+    "event_PrototypeEvent01_line06": "It barely makes any sense though.",
+    "event_PrototypeEvent02_set00_line01": "The Abyss - Planet Lumia - Day",
+    "event_PrototypeEvent02_set00_line02": "So you really live down here?",
+    "event_PrototypeEvent02_set00_choice01": "\"Is there a problem, Ange?\"",
+    "event_PrototypeEvent02_set00_choice02": "\"Yep! Born and raised underground!\"",
+    "event_PrototypeEvent02_set00_choice03": "\"Pretty boring underground\"",
+    "event_PrototypeEvent02_set00_choice04": "Stay silent",
+    "event_PrototypeEvent02_set01_line01": "N-Not at all!",
+    "event_PrototypeEvent02_set02_line01": "That's really cool!",
+    "event_PrototypeEvent02_set03_line01": "I wouldn't say that.",
+    "event_PrototypeEvent02_set04_line01": "...",
+    "event_PrototypeEvent02_set04_line02": "I keep forgetting you don't talk much.",
+    "event_PrototypeEvent02_set00_line03": "Its just that-",
+    "event_PrototypeEvent02_set00_line04": "I grew up in a forest with the sun shining through the leaves.",
+    "event_PrototypeEvent02_set00_line05": "I have a hard time imagining a civilization being completely under the surface.",
+    "event_PrototypeEvent02_set00_choice05": "\"And you claimed you were open minded?\"",
+    "event_PrototypeEvent02_set00_choice06": "Turn away and pout",
+    "event_PrototypeEvent02_set00_line06": "Don't look so offended."
+  },
+  "shop": {
+    "shop": "Shop",
+    "health": "Bun-Aid",
+    "food": "Bnuy Food",
+    "happy": "Bnuynip",
+    "name": "Name Tag",
+    "seed": "Flower Seed",
+    "none": "None"
+  },
+  "errorMessages": {
+    "getError": "Big Boner down the lane"
+  }
+}
